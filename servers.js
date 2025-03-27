@@ -273,8 +273,9 @@ const performMatrixMultiplication = (size = 100) => {
 
 // Function to simulate dynamic server metrics
 const getServerStatus = (port) => {
-    performMatrixMultiplication(500); // Perform matrix multiplication to simulate CPU load
-    
+   var num= Math.floor(Math.random() * 9) + 1;
+    performMatrixMultiplication(num*65); // Perform matrix multiplication to simulate CPU load
+    console.log(num*65) ;    
     return {
         server: `http://localhost:${port}`,  // Use the actual port
         // cpu: os.loadavg()[0].toFixed(2), // Real CPU load average
